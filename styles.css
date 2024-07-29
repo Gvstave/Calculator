@@ -1,4 +1,4 @@
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
@@ -10,17 +10,18 @@
     #main {
         width: 100%;
         height: 100%;
-        margin: 0;
-        padding: 0;
+        margin: 0px auto;
+        padding: 0px;
         display: flex;
         flex-direction: column;
         background-color: black;
+        border-radius: 0px;
     }
     
     #top div {
         width: 100%;
-        height: 50px;
-        margin: 3px auto;
+        height: 90px;
+        margin: 10px duto;
         color: white;
         text-align: right;
         display: flex;
@@ -49,15 +50,15 @@
     
     .info-holder input{
         color: white;
-        font-weight: 100;
-        font-size: 1.0em;
+        font-weight: 300;
+        font-size: 1.5em;
         border-bottom: 1px solid rgb(20, 20, 20);
     }
     
     #bottom {
      margin: 14px auto;
      width: 100%;
-     height: auto;
+     height: 100%;
     }
     
     #bottom ul {
