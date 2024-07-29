@@ -103,7 +103,7 @@
         background-color: rgb(34, 128, 34);
     }
 }
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
