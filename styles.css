@@ -1,0 +1,106 @@
+@media screen and (max-width: 330px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background: black;
+    }
+    
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    
+    #top div {
+        width: 100%;
+        height: 50px;
+        margin: 3px auto;
+        color: white;
+        text-align: right;
+        display: flex;
+    }
+    
+     input {
+        width: 100%;
+        height: 100%;
+        background: unset;
+        outline: none;
+        border: none;
+        text-align: right;
+        padding: 5px;
+    }
+
+    .input-holder input {
+        color: green;
+        font-size: 1.7em;
+    }
+    
+    .results-holder input{
+        font-size: 1.6em;
+        color: white;
+        font-weight: 100;
+    }
+    
+    .info-holder input{
+        color: white;
+        font-weight: 100;
+        font-size: 1.0em;
+        border-bottom: 1px solid rgb(20, 20, 20);
+    }
+    
+    #bottom {
+     margin: 14px auto;
+     width: 100%;
+     height: auto;
+    }
+    
+    #bottom ul {
+      list-style-type: none;
+      padding: 0px;
+    }
+    
+    #bottom ul li {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    button {
+       width: 70px;
+       height: 70px;
+       margin: 3px auto;
+       border: none;
+       border-radius: 100px;
+       font-size: 1.7em;
+       text-align: center;
+       background-color: rgb(20, 20, 20);
+       color: white;
+    }
+    
+    button:active {
+        background-color: rgb(12, 12, 12);
+        font-size: 1.4em;
+    }
+    
+    .red {
+        color: red;
+    }
+    
+    .green {
+        color: green;
+    }
+    
+    .green-bg {
+        background-color: green;
+    }
+    
+    .green-bg:active {
+        background-color: rgb(34, 128, 34);
+    }
+}
