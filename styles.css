@@ -72,6 +72,7 @@ button {
     border-radius: 100px;
     border: 1px solid #333;
     font-size: 1.7em;
+    cursor: pointer;
 }
 
 .green {
@@ -86,6 +87,13 @@ button:hover {
     font-size: 1.8em;
     transition: all .12s ease;
     background-color: #333;
+}
+
+/* The power button is disabled */
+#power:hover {
+    font-size: 1.7em;
+    background-color: black;
+    cursor: auto;
 }
 
 @media screen and (max-width: 360px) {
