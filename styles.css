@@ -1,325 +1,100 @@
-/*media query for devices larger than a phone*/
-@media screen and (min-width: 330px) {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        background: linear-gradient(90deg, black, rgb(255, 255, 255), black);
-    }
-    
-    #main {
-        width: 310px;
-        height: auto;
-        margin: 50px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 5px;
-        padding: 0 10px;
-        background-color: black;
-        box-shadow: 0px 0px 0px 0px black;
-    }
-    
-    #top div {
-        width: 100%;
-        height: auto;
-        margin: 3px auto;
-        color: white;
-        text-align: right;
-        display: flex;
-    }
-    
-     input {
-        width: 100%;
-        height: 40px;
-        font-size: 2em;
-        background: unset;
-        outline: none;
-        border: none;
-        color: green;
-        text-align: right;
-        padding: 5px;
-    }
-    
-    .results-holder input{
-        font-size: 1.7em;
-        color: white;
-        font-weight: 100;
-    }
-    
-    .info-holder input{
-        color: white;
-        font-weight: 100;
-        font-size: 1.7em;
-        border-bottom: 1px solid rgb(20, 20, 20);
-    }
-    
-    #bottom {
-     width: 100%;
-     height: auto;
-    }
-    
-    #bottom ul {
-      list-style-type: none;
-      padding: 0px;
-    }
-    
-    #bottom ul li {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    
-    button {
-       width: 70px;
-       height: 70px;
-       margin: 3px auto;
-       border: none;
-       border-radius: 100px;
-       font-size: 2em;
-       text-align: center;
-       background-color: rgb(20, 20, 20);
-       color: white;
-    }
-    
-    button:active {
-        background-color: rgb(12, 12, 12);
-        font-size: 1.6em;
-    }
-    
-    .red {
-        color: red;
-    }
-    
-    .green {
-        color: green;
-    }
-    
-    .green-bg {
-        background-color: green;
-    }
-    
-    .green-bg:active {
-        background-color: rgb(34, 128, 34);
-    }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
 }
 
-/*Media query for devices small than a tablet and laptop/desktop*/
-@media screen and (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        background: black;
-    }
-    
-    #main {
-        width: 100%;
-        height: 100%;
-        margin: 0px auto;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        border-radius: 0px;
-    }
-    
-    #top div {
-        width: 100%;
-        height: 90px;
-        margin: 10px duto;
-        color: white;
-        text-align: right;
-        display: flex;
-    }
-    
-     input {
-        width: 100%;
-        height: 100%;
-        background: unset;
-        outline: none;
-        border: none;
-        text-align: right;
-        padding: 5px;
-    }
-
-    .input-holder input {
-        color: green;
-        font-size: 2em;
-    }
-    
-    .results-holder input{
-        font-size: 1.7em;
-        color: white;
-        font-weight: 100;
-    }
-    
-    .info-holder input{
-        color: white;
-        font-weight: 300;
-        font-size: 1.7em;
-        border-bottom: 1px solid rgb(20, 20, 20);
-    }
-    
-    #bottom {
-     margin: 14px auto;
-     width: 100%;
-     height: 100%;
-    }
-    
-    #bottom ul {
-      list-style-type: none;
-      padding: 0px;
-    }
-    
-    #bottom ul li {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    
-    button {
-       width: 70px;
-       height: 70px;
-       margin: 3px auto;
-       border: none;
-       border-radius: 100px;
-       font-size: 2em;
-       text-align: center;
-       background-color: rgb(20, 20, 20);
-       color: white;
-    }
-    
-    button:active {
-        background-color: rgb(12, 12, 12);
-        font-size: 1.6em;
-    }
-    
-    .red {
-        color: red;
-    }
-    
-    .green {
-        color: green;
-    }
-    
-    .green-bg {
-        background-color: green;
-    }
-    
-    .green-bg:active {
-        background-color: rgb(34, 128, 34);
-    }
+#main {
+    max-width: 360px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 40px auto;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .12);
 }
 
-/*Media query for screens samller than android's*/
+#main div:nth-of-type(1) {
+    padding: 10px;
+    display: block;
+}
 
- @media screen and (max-width: 330px) {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        background: black;
-    }
-    
+#top {
+    width: auto;
+    border-bottom: 1px solid #333;
+}
+
+#bottom {
+    display: grid;
+    gap: 40px;
+}
+
+#bottom ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+}
+
+#bottom ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input, button {
+    outline: none;
+}
+
+input {
+    width: 100%;
+    text-align: right;
+    font-size: 1.7em;
+    padding-block: 15px;
+    background: none;
+    border: none;
+}
+
+input:nth-of-type(1) {
+    font-size: 2em;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid #333;
+    font-size: 1.7em;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+button:hover {
+    font-size: 1.8em;
+    transition: all .12s ease;
+    background-color: #333;
+}
+
+@media screen and (max-width: 360px) {
     #main {
-        width: 100%;
-        height: 100%;
-        margin: 0px auto;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        border-radius: 0px;
-    }
-    
-    #top div {
-        width: 100%;
-        height: 90px;
-        margin: 10px duto;
-        color: white;
-        text-align: right;
-        display: flex;
-    }
-    
-     input {
-        width: 100%;
-        height: 100%;
-        background: unset;
-        outline: none;
-        border: none;
-        text-align: right;
-        padding: 5px;
-    }
-
-    .input-holder input {
-        color: green;
-        font-size: 2em;
-    }
-    
-    .results-holder input{
-        font-size: 1.7em;
-        color: white;
-        font-weight: 100;
-    }
-    
-    .info-holder input{
-        color: white;
-        font-weight: 300;
-        font-size: 1.7em;
-        border-bottom: 1px solid rgb(20, 20, 20);
-    }
-    
-    #bottom {
-     margin: 14px auto;
-     width: 100%;
-     height: 100%;
-    }
-    
-    #bottom ul {
-      list-style-type: none;
-      padding: 0px;
-    }
-    
-    #bottom ul li {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    
-    button {
-       width: 70px;
-       height: 70px;
-       margin: 3px auto;
-       border: none;
-       border-radius: 100px;
-       font-size: 2em;
-       text-align: center;
-       background-color: rgb(20, 20, 20);
-       color: white;
-    }
-    
-    button:active {
-        background-color: rgb(12, 12, 12);
-        font-size: 1.6em;
-    }
-    
-    .red {
-        color: red;
-    }
-    
-    .green {
-        color: green;
-    }
-    
-    .green-bg {
-        background-color: green;
-    }
-    
-    .green-bg:active {
-        background-color: rgb(34, 128, 34);
-    }
-        }
+    max-width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 10px;
+    margin: 40px auto;
+    box-shadow: none;
+}
+}
